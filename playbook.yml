@@ -1,0 +1,9 @@
+---
+- name: Installation devserver
+  vars_files:
+    - ./vars/parameters.yml
+  hosts: devservers
+  become: yes
+  roles: 
+    - docker
+...
